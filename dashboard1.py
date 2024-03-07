@@ -7,11 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1P355IGe4ALwEz7OMDqW6DVz7vOyODKVq
 """
 
-import numpy as np
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
 
 # Load data
 def load_data():
