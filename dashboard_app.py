@@ -5,7 +5,6 @@ import seaborn as sns
 import streamlit as st
 
 # Load data
-@st.cache
 def load_data():
     df = pd.read_csv("https://raw.githubusercontent.com/Danendracleo/Guanyuan.csv/main/PRSA_Data_Guanyuan_20130301-20170228.csv")
     return df
@@ -43,16 +42,14 @@ st.pyplot()
 # Health classification function
 def airpolution_show(df):
     # Your function code here
-
-st.write("### Air Pollution Classification for 2013-2017")
-airpolution_show(average_pollution_by_year.head(5))
+    st.write("### Air Pollution Classification for 2013-2017")
+    airpolution_show(average_pollution_by_year.head(5))
 
 # Air parameters graph
 def air_parameters_graph(df):
     # Your function code here
-
-st.write("### Trends in Temperature and Air Pressure at Aotizhongxin")
-air_parameters_graph(air_average_by_year.head(5))
+    st.write("### Trends in Temperature and Air Pressure at Aotizhongxin")
+    air_parameters_graph(air_average_by_year.head(5))
 
 # Conclusion
 st.write("## Conclusions")
