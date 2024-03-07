@@ -222,5 +222,5 @@ else:
     plt.suptitle("Mean Trend of Temperature and Pressure over 5 Years in Guanyuan", fontsize=45, y=1.05)
     st.pyplot(fig)
 
-pip freeze > requirements.txt
+!pip freeze > requirements.txt
 pip list --format=freeze > requirements.txt
